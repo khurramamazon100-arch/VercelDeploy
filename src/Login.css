@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f4f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.login-image-section {
+  width: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-main-image {
+  width: 100%;
+  height: 565px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card-section {
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  width: 100%;
+  min-height: 565px;
+  border: none;
+  border-radius: 1rem !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.login-card .card-body {
+  padding: 45px 35px;
+}
+
+/* Logo */
+
+.logo-container {
+  margin-bottom: 15px;
+}
+
+.login-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Heading */
+
+.login-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.login-subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Form */
+
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group .form-label {
+  color: #198754;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.form-group .form-control {
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+.form-group .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.15);
+}
+
+/* Forgot Password */
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #198754;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+
+.login-btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  background: #198754;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #146c43;
+}
+
+/* Signup */
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-text p {
+  margin-bottom: 10px;
+}
+
+.signup-text a {
+  color: #198754;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Social */
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-row a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #198754;
+  text-decoration: none;
+  border: 1px solid #198754;
+  transition: 0.3s;
+}
+
+.social-row a:hover {
+  background: #198754;
+  color: white;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .login-wrapper {
+    max-width: 800px;
+  }
+
+  .login-image-section {
+    width: 55%;
+  }
+
+  .login-card-section {
+    width: 45%;
+  }
+
+  .login-main-image {
+    height: 500px;
+  }
+
+  .login-card {
+    min-height: 500px;
+  }
+
+  .login-card .card-body {
+    padding: 30px 25px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .login-page {
+    padding: 15px;
+  }
+
+  .login-wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  /* Image becomes top section */
+
+  .login-image-section {
+    width: 100%;
+  }
+
+  .login-main-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Login becomes bottom section */
+
+  .login-card-section {
+    width: 100%;
+  }
+
+  .login-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .login-card .card-body {
+    padding: 30px 25px;
+  }
+
+  .login-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .login-page {
+    padding: 10px;
+  }
+
+  .login-wrapper {
+    gap: 10px;
+  }
+
+  .login-main-image {
+    height: 170px;
+    border-radius: 10px;
+  }
+
+  .login-card .card-body {
+    padding: 25px 20px;
+  }
+
+  .login-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    font-size: 13px;
+  }
+
+  .form-group .form-control {
+    height: 43px;
+  }
+
+  .login-btn {
+    height: 43px;
+    font-size: 16px;
+  }
+
+}
